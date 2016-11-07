@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to JC's Expense Tracker </title>
+		<meta name="keywords" content="expense, tracker, money" />  
+		<meta name="description" content="expense tracker web application" />  
+		<meta name="revised" content="FirstRevision by JC, 11/07/2016" />
+		<link rel="stylesheet" type="text/css" href="design1.css" media="screen"/>
+		<script src="script1.js"> </script>   
+	</head>
+	
+	<body>
+	
+		<div id="header"> 
+			<span id="mainLogo">JCET </span>
+			<p>A web app expense tracker </p>
+			<div id="menu"> 
+				<ul>
+					<li onmouseover=onMenuHover(stHome,stHomeDesc) onmouseout=onMenuHover(stInput,stInputDesc)> 
+						<a class="menuLink" href="home.html"> HOME </a> </li>
+					<li> <a class="menuLink" href="input.html"> INPUT </a> </li>
+					<li onmouseover=onMenuHover(stView,stViewDesc) onmouseout=onMenuHover(stInput,stInputDesc,"rgb(186,205,244)")> 
+						<a class="menuLink" href="https://www,yahoo.com"> VIEW </a> </li>
+					<li onmouseover=onMenuHover(stAbout,stAboutDesc) onmouseout=onMenuHover(stInput,stInputDesc,"rgb(186,205,244)")>
+						<a class="menuLink" href="https://www.bing.com">ABOUT </a> </li>
+			</div>
+		</div>
+		
+		<div id="banner"> 
+			<span id="bannerTitle"> INPUT </span>
+			<p id="bannerDesc"> Submit your expense entries here </p>
+		
+		</div>
+		
+		<div id=wrap> 
+		
+			<div id="body_left"> <br />
+				<form>
+						Currency:   <select name="currency">
+						<option value="AUD" selected>AUD</option>
+						<option value="Php">Php</option>
+						<option value="USD">USD</option>
+						</select> <br />
+						
+						Price: <input type="text" name="price" > <br />
+						Description: <input type="text" name="description" > 
+						<button type="button" onclick="submitFunction()">Submit</button>
+						
+				</form>
+				
+				<h4>Output Log </h4>
+				<p id='outputLog1'>No entry has been done for this session</p>
+				<p id='outputLog2'> <code> </code> </p> 
+				
+				
+			</div>
+			
+			<div id="body_right"> 
+				<form>
+					User Name: <input type="text" name="first_name" >
+				<br>
+					PassWord: <input type="password" name="password">
+				<br>
+				<button type="button" onclick="document.getElementById('logInWarning').style.display='block'">Log In!</button>
+				<p id="logInWarning"> There is really no need to log in right now!! </p>
+			</div>
+			
+		</div>
+		
+
+		
+	</body>
+
+</html>

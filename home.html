@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to JC's Expense Tracker </title>
+		<meta name="keywords" content="expense, tracker, money" />  
+		<meta name="description" content="expense tracker web application" />  
+		<meta name="revised" content="FirstRevision by JC, 11/07/2016" />
+		<link rel="stylesheet" type="text/css" href="design1.css" media="screen"/>
+		<script src="script1.js"> </script>   
+	</head>
+	
+	<body>
+	
+		<div id="header"> 
+			<span id="mainLogo">JCET </span>
+			<p>A web app expense tracker </p>
+			<div id="menu"> 
+				<ul>
+					<li> <a class="menuLink" href="home.html"> HOME </a> </li>
+					<li onmouseover=onMenuHover(stInput,stInputDesc) onmouseout=onMenuHover(stHome,stHomeDesc,"rgb(186,205,244)")> 
+						<a class="menuLink" href="input.html"> INPUT </a> </li>
+					<li onmouseover=onMenuHover(stView,stViewDesc) onmouseout=onMenuHover(stHome,stHomeDesc,"rgb(186,205,244)")> 
+						<a class="menuLink" href="https://www,yahoo.com"> VIEW </a> </li>
+					<li onmouseover=onMenuHover(stAbout,stAboutDesc) onmouseout=onMenuHover(stHome,stHomeDesc,"rgb(186,205,244)")>
+						<a class="menuLink" href="https://www.bing.com">ABOUT </a> </li>
+			</div>
+		</div>
+		
+		<div id="banner"> 
+			<span id="bannerTitle"> HOME </span>
+			<p id="bannerDesc"> Overview of the web application, log in page </p>
+		
+		</div>
+		
+		<div id=wrap> 
+		
+			<div id="body_left"> 
+				<h2>Expense Tracker </h2>
+				<hr>
+				<p> In this modern age of ubiquotous computing, it can be said that modern information and communicatioin technology is already part
+				of the basic human needs. With increasing economy and salary, the middle class is able to afford nice gadgets and travel to new places.
+				Unforunately, the prizes of real estate bloats up as well. In order to ensure that we are saving enough, we need to track our expenses. </p>
+				
+				<p> This Web application will allow users to store their expenses and review them at a later time. The timestamp for each entry will
+					be automatically recorded. Analysis tools will be made available for reviewing the current database of expenses such as 
+					data grouping and filtering, statistical regressions, and charts.</p>
+				
+				<h2> How to use </h2>
+				<hr>
+				<p> To start using this application, log in now. In the future, multiple users will be supported. To enter an expense, press the <strong> INPUT tab. </strong> 
+				To review the current expense database, press the <strong>VIEW tab</strong>. </p>
+				
+				<h2> Implementation details </h2>
+				<hr>
+				<p> The web page and its design is handcrafted using HTML and CSS, and Javascript is used to add interactive effects. Furthermore, I will be 
+				using JS to create place holder functions as I add features on the web application. A MySQL Server is used to store the expense database. SQL
+				table queries will be utilized in viewing the current expense entries</p>
+		
+				
+			</div>
+			
+			<div id="body_right"> 
+				<form>
+					User Name: <input type="text" name="first_name" >
+				<br>
+					PassWord: <input type="password" name="password">
+				<br>
+				<button type="button" onclick="document.getElementById('logInWarning').style.display='block'">Log In!</button>
+				<p id="logInWarning"> There is really no need to log in right now!! </p>
+			</div>
+			
+		</div>
+		
+
+		
+	</body>
+
+</html>
