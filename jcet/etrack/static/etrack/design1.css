@@ -1,0 +1,150 @@
+
+body{
+	overflow:scroll;
+}
+
+#header{
+	background-color: rgb(0,51,102);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+#mainLogo{
+	font-size: 50px;
+	font-weight: bold;
+	padding: 30px 20px 20px 30px;
+	text-shadow: 10px 10px 20px black;
+	display: inline;
+}
+
+#header p{
+	font-size: 15px;
+	color: rgb(186,205,244);
+	display: inline;	
+	position: relative;
+	bottom: 10px;
+	font-family: "Arial";
+}
+
+#menu, #menu *{
+	display: inline;
+}
+
+#menu ul li{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Calibri";
+	padding-left: 20px;
+	padding-right; 20px;
+	position: relative;
+	left: 500px;
+}
+
+.menuLink:link{
+	color: white;
+	text-decoration: none;
+}
+
+.menuLink:visited{
+	color: white;
+	text-decoration: none;
+}
+
+.menuLink:hover{
+	color: rgb(186,205,244);
+}
+
+
+#banner{
+	background-color: rgb(186,205,244);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:rgb(0,51,102);
+	font-weigth: bold;
+}
+
+#bannerTitle{
+	font-size:40px;
+	padding: 30px 20px 20px 30px;
+}
+
+#banner p{
+	font-size: 20px;
+	display: inline;	
+	font-family: "Arial";
+	position: relative;
+	bottom: 5px;
+	
+}
+
+/*body properties*/
+/*two create two columns we wrap two divs as the container */
+/*floating objects will float to the edge of the container*/
+
+
+#wrap{
+	width:1334px;
+	margin:0;
+	background-color = "red";
+}
+
+#body_left{
+	float:left;
+	width:750px;
+}
+
+#body_right{
+	background-color: rgb(234,234,234);
+	float:right;
+	width:450px;
+}
+
+
+#wrap p{
+	font-family:"Arial";
+}
+
+#body_left{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+#body_right{
+	padding-top: 20px;
+	padding-left: 20px;
+	margin-right: 0px;
+	height:520px;
+}
+
+input[type=text], input[type=password], select{
+    width: 50%;
+    padding: 4px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+	position:relative;
+	left:8px;
+}
+
+#logInWarning{
+	color:red;
+	display:none;
+}
+
+select[name=currency]{
+	width: 15%;
+	position: relative;
+	left:18px;
+}
+
+input[name=price]{
+	width:15%;
+	position: relative;
+	left:40px;
+}
